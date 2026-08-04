@@ -9,10 +9,6 @@ Building software for autonomous aerial systems through perception, planning, an
 </p>
 
 <p align="center">
-Research Intern • Drone Laboratory, IIT (ISM) Dhanbad
-</p>
-
-<p align="center">
 
 <a href="https://www.linkedin.com/in/md-kaif-nezami-029507313">
 <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white">
@@ -29,23 +25,27 @@ Research Intern • Drone Laboratory, IIT (ISM) Dhanbad
 </p>
 
 <p align="center">
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=18&duration=3000&pause=1000&center=true&vCenter=true&width=700&lines=Autonomous+Aerial+Systems;Flight+Data+Analysis;ROS2+and+PX4;Computer+Vision+and+OpenCV;Motion+Planning;Embedded+Systems;Simulation+and+Validation" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=18&duration=3000&pause=1000&center=true&vCenter=true&width=800&lines=Autonomous+Aerial+Systems;Indoor+Autonomy;Flight+Data+Analysis;ROS2+and+PX4;Computer+Vision+and+OpenCV;Motion+Planning;Simulation+and+Validation">
 </p>
 
 ---
 
 ## About Me
 
-I am an Electronics and Communication Engineering undergraduate at BIT Sindri and currently work as a research intern at the Drone Laboratory, IIT (ISM) Dhanbad.
+I am an Electronics and Communication Engineering undergraduate at BIT Sindri working on software development for autonomous aerial systems.
 
-My work focuses on UAV software development, autonomous navigation, computer vision, embedded systems, and simulation environments for autonomous aerial systems.
+My work combines robotics, computer vision, simulation, and embedded software to develop reliable navigation pipelines for unmanned aerial vehicles.
 
-I am currently contributing to a MeitY-funded research project under the supervision of Prof. Ravi Kumar Gangwar.
+I previously worked on a MeitY-funded UAV research project at the Drone Laboratory, IIT (ISM) Dhanbad under the supervision of Prof. Ravi Kumar Gangwar.
 
-My primary areas of interest include:
+I am currently working on indoor autonomy while continuing to explore motion planning, state estimation, perception, and visual SLAM using ROS 2.
+
+---
+
+## Areas of Interest
 
 - Autonomous navigation
-- UAV software development
+- Indoor autonomy
 - Flight data analysis
 - Computer vision
 - State estimation
@@ -57,33 +57,32 @@ My primary areas of interest include:
 
 ## Research Experience
 
-### Research Intern — Drone Laboratory, IIT (ISM) Dhanbad
+### Drone Laboratory — IIT (ISM) Dhanbad
 
-**Project**
-
-Development of autonomous aerial systems under a MeitY-funded research program.
-
-**Areas of work**
+#### Areas of contribution
 
 - Flight data analysis
-- Vision-based navigation
-- UAV software integration
-- Embedded systems integration
 - GPS-denied navigation
+- Vision-based navigation
+- Sensor integration
+- Embedded software development
 - Simulation and validation
 
 ---
 
 ## Featured Projects
 
-### ArduPilot Flight Data Analysis
+### ArduPilot Flight Analysis
 
-- Analysed more than 35 DataFlash logs.
-- Investigated GPS inconsistencies, vibration anomalies, and crash events.
-- Automated data extraction and visualization workflows.
-- Performed detailed analysis using MAVExplorer and pymavlink.
+- Investigated quadrotor flight logs using ArduPilot DataFlash logs.
 
-**Technologies**
+- Identified failure patterns associated with GPS inconsistencies, vibration anomalies, and attitude instability.
+
+- Developed automated analysis pipelines using Python.
+
+- Validated observations using MAVExplorer and Mission Planner.
+
+#### Technologies
 
 ```text
 Python • Pymavlink • MAVExplorer • Pandas • Matplotlib
@@ -91,29 +90,63 @@ Python • Pymavlink • MAVExplorer • Pandas • Matplotlib
 
 ---
 
+### Flight Path Reconstruction and Visualization
+
+Reconstructed UAV trajectories from ArduPilot DataFlash logs using Python, OpenCV, and pymavlink.
+
+<p align="center">
+
+<img src="./flight_animation(4).gif" width="850">
+
+</p>
+
+#### Highlights
+
+- Extracted telemetry information from DataFlash logs.
+
+- Reconstructed flight trajectories from GPS data.
+
+- Generated animated trajectory visualizations using OpenCV.
+
+- Validated reconstructed flight paths using Mission Planner and MAVExplorer.
+
+#### Technologies
+
+```text
+Python • OpenCV • Pymavlink • MAVExplorer
+```
+
+---
+
 ### Vision-Based Navigation for GPS-Denied Environments
 
 - Developed an ArUco-based precision landing pipeline.
-- Integrated a Raspberry Pi companion computer with Cube Orange.
-- Performed software validation in PX4 and Gazebo environments.
 
-**Technologies**
+- Integrated Cube Orange and Raspberry Pi hardware.
+
+- Performed simulation-based validation using PX4 and Gazebo.
+
+#### Technologies
 
 ```text
-ROS2 • PX4 • OpenCV • Gazebo • MAVROS • ArUco
+ROS2 • PX4 • Gazebo • OpenCV • MAVROS • ArUco
 ```
 
 ---
 
 ### TurtleBot3 Navigation and Control
 
-- Forward and inverse kinematics
-- Laser scanner processing
-- Odometry estimation
-- Obstacle avoidance
-- Navigation algorithms
+- Forward kinematics
 
-**Technologies**
+- Inverse kinematics
+
+- Odometry estimation
+
+- Laser scanner processing
+
+- Obstacle avoidance
+
+#### Technologies
 
 ```text
 ROS • Gazebo • RViz • Python
@@ -126,12 +159,6 @@ ROS • Gazebo • RViz • Python
 <p align="center">
 
 <img src="https://skillicons.dev/icons?i=c,cpp,python,java,linux,git,github,vscode"/>
-
-</p>
-
-<p align="center">
-
-<img src="https://go-skill-icons.vercel.app/api/icons?i=opencv"/>
 
 </p>
 
@@ -180,18 +207,18 @@ UAV Systems
 - Motion planning
 - State estimation
 - Visual SLAM
-- Reinforcement learning
 - Control systems
+- Reinforcement learning
 
 ---
 
 ## Technical Documentation
 
 - Research reports using LaTeX
-- Experimental analysis and evaluation
-- Technical comparisons and benchmarking
+- Experimental evaluation
+- Technical benchmarking
 - Simulation reports
-- Flight data documentation
+- Flight data analysis reports
 
 ---
 
@@ -199,9 +226,9 @@ UAV Systems
 
 <p align="center">
 
-<img height="170em" src="https://github-readme-stats.vercel.app/api?username=nezamimdkaif&show_icons=true"/>
+<img height="170em" src="https://github-readme-stats.vercel.app/api?username=nezamimdkaif&show_icons=true">
 
-<img height="170em" src="https://github-readme-streak-stats.herokuapp.com/?user=nezamimdkaif"/>
+<img height="170em" src="https://github-readme-streak-stats.herokuapp.com/?user=nezamimdkaif">
 
 </p>
 
@@ -211,7 +238,7 @@ UAV Systems
 
 <p align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=nezamimdkaif"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=nezamimdkaif">
 
 </p>
 
@@ -226,7 +253,5 @@ UAV Systems
 ---
 
 <p align="center">
-
 Building intelligent aerial systems one algorithm at a time.
-
-</p>****
+</p>
