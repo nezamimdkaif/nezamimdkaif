@@ -9,7 +9,7 @@ Research Intern, Drone Laboratory, IIT (ISM) Dhanbad
 
 ### About
 
-Working on UAV autonomy as part of a MeitY funded research project (Project No. MeitY/2022 2023/958/ECE) at the Drone Laboratory, IIT (ISM) Dhanbad, under Prof. Ravi Kumar Gangwar and Dr. Mohd Aijaz Siddiqui. Focus areas: flight data analysis, vision based navigation for GPS denied environments, and embedded/software integration on a hybrid fixed wing drone platform.
+Working on UAV autonomy as part of a MeitY funded research project (Project No. MeitY/2022 2023/958/ECE) at the Drone Laboratory, IIT (ISM) Dhanbad, under Prof. Ravi Kumar Gangwar. Focus areas: flight data analysis, vision based navigation for GPS denied environments, and embedded/software integration on a hybrid fixed wing drone platform.
 
 ---
 
