@@ -1,56 +1,50 @@
 # Md Kaif Nezami
 
-**Electronics & Communication Engineering** · BIT Sindri, Dhanbad
-**Research Intern**, Drone Laboratory, IIT (ISM) Dhanbad
+Electronics & Communication Engineering, BIT Sindri, Dhanbad
+Research Intern, Drone Laboratory, IIT (ISM) Dhanbad
 
-<p>
-  <a href="https://www.linkedin.com/in/md-kaif-nezami-029507313"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white"/></a>
-  <a href="https://nezamimdkaif.github.io/portfolio/"><img src="https://img.shields.io/badge/Portfolio-111111?style=flat-square&logo=googlechrome&logoColor=white"/></a>
-  <a href="mailto:mdkaif.ece24@bitsindri.ac.in"><img src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white"/></a>
-</p>
+[LinkedIn](https://www.linkedin.com/in/md-kaif-nezami-029507313) · [Portfolio](https://nezamimdkaif.github.io/portfolio/) · [Email](mailto:mdkaif.ece24@bitsindri.ac.in)
 
 ---
 
 ### About
 
-Second year ECE undergraduate with a focus on embedded systems and applied robotics. Currently working as a summer research intern at the Drone Laboratory, IIT (ISM) Dhanbad, on a MeitY funded UAV research project (Project No. MeitY/2022 2023/958/ECE), under the guidance of Prof. Ravi Kumar Gangwar and Dr. Mohd Aijaz Siddiqui.
+Working on UAV autonomy as part of a MeitY funded research project (Project No. MeitY/2022 2023/958/ECE) at the Drone Laboratory, IIT (ISM) Dhanbad, under Prof. Ravi Kumar Gangwar and Dr. Mohd Aijaz Siddiqui. Focus areas: flight data analysis, vision based navigation for GPS denied environments, and embedded/software integration on a hybrid fixed wing drone platform.
 
-My work sits at the intersection of flight data analysis and autonomous navigation: studying ArduPilot flight logs to understand failure patterns in real UAV flights, and building vision based navigation approaches for environments where GPS is unreliable, validated through simulation before hardware deployment. Alongside this, I work on writing structured technical documentation and reports for the lab's research output.
+---
 
-Long term, I'm working toward embedded software engineering, with a parallel interest in applied AI and data driven approaches to robotics.
+### Highlights
+
+**ArduPilot Flight Log Analysis**
+Analyzed 35+ DataFlash `.BIN` logs using pymavlink and MAVExplorer to identify recurring failure patterns: GPS/compass inconsistency, vibration anomalies, crash linked attitude instability. Built a scoring framework across the log set.
+`ardupilot` `pymavlink` `mavexplorer` `flight-data-analysis`
+
+**ArUco Based Navigation for GPS Denied Environments**
+Vision based precision landing approach targeting a Raspberry Pi 4B companion computer with a Cube Orange flight controller. Detection and landing logic validated in Gazebo/PX4/ROS 2 simulation before hardware integration.
+`ros2` `px4` `gazebo` `opencv` `aruco` `gps-denied`
+
+**TurtleBot3 Autonomy (Python for Robotics)**
+Implemented movement control, laser scanner processing, odometry, and obstacle avoidance algorithms for a TurtleBot3 in Gazebo/RViz, across OOP and procedural implementations.
+`ros` `gazebo` `rviz` `python`
 
 ---
 
 ### Skills
 
-**Core**
 <p>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" width="38" height="38" alt="C"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="38" height="38" alt="Python"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="38" height="38" alt="Java"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" width="38" height="38" alt="OpenCV"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ros/ros-original.svg" width="38" height="38" alt="ROS"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="38" height="38" alt="Linux"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/latex/latex-original.svg" width="38" height="38" alt="LaTeX"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="38" height="38" alt="Git"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="38" height="38" alt="GitHub"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" width="36" height="36" alt="C"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="36" height="36" alt="Python"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="36" height="36" alt="Java"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" width="36" height="36" alt="OpenCV"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ros/ros-original.svg" width="36" height="36" alt="ROS"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="36" height="36" alt="Linux"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/latex/latex-original.svg" width="36" height="36" alt="LaTeX"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="36" height="36" alt="Git"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="36" height="36" alt="GitHub"/>
 </p>
 
-**Research & Workflow**
-- **ROS 2**: simulation based robotics workflows, package structuring, testing autonomy logic in Gazebo before hardware
-- **Git & GitHub**: version control across multi member research and dev projects, structured commit history
-- **AI assisted development**: using tools like Claude for code review, debugging, and accelerating research workflows
-- **Technical documentation**: LaTeX reports, structured research write ups, comparison tables, procurement and evaluation documents
+ROS 2 simulation workflows · Git/GitHub version control · AI assisted development (Claude) for code review and debugging · Technical documentation (LaTeX reports, comparison tables, research write ups)
 
 ---
 
-### GitHub Activity
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=nezamimdkaif&show_icons=true&theme=default&hide_border=true" height="165"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nezamimdkaif&layout=compact&theme=default&hide_border=true" height="165"/>
-</p>
-
----
-
-<p align="center"><sub>Building toward autonomous systems, one commit at a time.</sub></p>
+<sub>Building toward embedded software and autonomous systems.</sub>
