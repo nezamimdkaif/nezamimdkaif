@@ -1,0 +1,226 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1600 520" width="1600" height="520">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#010204"/>
+      <stop offset="0.55" stop-color="#02050b"/>
+      <stop offset="1" stop-color="#040a16"/>
+    </linearGradient>
+    <linearGradient id="blueTrail" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#2b6fff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#7fb4ff" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+    <linearGradient id="redTrail" x1="1" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#ff1a1a" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#ff2a2a" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#ffb0b0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#6fd3ff" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#6fd3ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vpGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#cfe6ff" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#cfe6ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="fadeLeft" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#010204" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#010204" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="scanGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6fd3ff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#6fd3ff" stop-opacity="0.35"/>
+    </linearGradient>
+    <radialGradient id="fan" cx="0" cy="0.5" r="1">
+      <stop offset="0" stop-color="#6fd3ff" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#6fd3ff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur3" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <path id="flight" d="M 60 470 C 560 470, 900 340, 1220 250"/>
+    <style>
+      /* forward-flying tunnel ribs */
+      .tun{fill:none;stroke:#5aa0ff;stroke-width:1.6;vector-effect:non-scaling-stroke;
+           transform-origin:1220px 250px;animation:fly 4.8s cubic-bezier(.45,0,.9,.7) infinite}
+      @keyframes fly{0%{transform:scale(.03);opacity:0}12%{opacity:.95}100%{transform:scale(1.7);opacity:0}}
+      /* streaking light trails */
+      .streak{fill:none;stroke-linecap:round;stroke-dasharray:70 420;animation:streak 2.4s linear infinite}
+      @keyframes streak{from{stroke-dashoffset:490}to{stroke-dashoffset:0}}
+      .dash{stroke-dasharray:10 8;animation:dash 1.2s linear infinite}
+      @keyframes dash{to{stroke-dashoffset:-36}}
+      /* sweeps, blinks, spins */
+      .scan{animation:scan 7s linear infinite}
+      @keyframes scan{from{transform:translateX(-40px)}to{transform:translateX(1640px)}}
+      .blink{animation:blink 1.1s steps(2,start) infinite}
+      @keyframes blink{to{opacity:0}}
+      .spin{transform-box:fill-box;transform-origin:center;animation:spin .3s linear infinite}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      .ring1{transform-origin:230px 250px;animation:rot 14s linear infinite}
+      .ring2{transform-origin:230px 250px;animation:rot 9s linear infinite reverse}
+      @keyframes rot{to{transform:rotate(360deg)}}
+      .horizon{transform-origin:230px 250px;animation:tilt 5s ease-in-out infinite}
+      @keyframes tilt{0%,100%{transform:rotate(-14deg)}50%{transform:rotate(14deg)}}
+      .bar{transform-box:fill-box;transform-origin:50% 100%;animation:eq 1.6s ease-in-out infinite}
+      @keyframes eq{0%,100%{transform:scaleY(.18)}50%{transform:scaleY(1)}}
+      .tw{animation:tw 3s ease-in-out infinite}
+      @keyframes tw{0%,100%{opacity:.1}50%{opacity:1}}
+      .wave{fill:none;stroke:#6fd3ff;stroke-width:2;stroke-linecap:round;stroke-dasharray:240 760;animation:wave 3.2s linear infinite}
+      @keyframes wave{from{stroke-dashoffset:1000}to{stroke-dashoffset:0}}
+      .lock{transform-origin:1220px 250px;animation:lock 1.8s ease-in-out infinite}
+      @keyframes lock{0%,100%{transform:scale(1.25);opacity:.35}50%{transform:scale(.95);opacity:1}}
+      .marker{animation:mk 1.8s ease-in-out infinite}
+      @keyframes mk{0%,100%{opacity:.45}50%{opacity:1}}
+    </style>
+  </defs>
+
+  <rect width="1600" height="520" fill="url(#bg)"/>
+
+  <!-- faint perspective grid lines of the corridor -->
+  <g stroke="#2a5db0" stroke-width="1" opacity="0.3">
+    <line x1="320" y1="-80" x2="1220" y2="250"/><line x1="2120" y1="-80" x2="1220" y2="250"/>
+    <line x1="320" y1="580" x2="1220" y2="250"/><line x1="2120" y1="580" x2="1220" y2="250"/>
+  </g>
+
+  <!-- tunnel ribs flying toward the viewer (continuous forward motion) -->
+  <g>
+    <rect class="tun" style="animation-delay:0s"     x="320" y="-80" width="1800" height="660"/>
+    <rect class="tun" style="animation-delay:-.6s"   x="320" y="-80" width="1800" height="660"/>
+    <rect class="tun" style="animation-delay:-1.2s"  x="320" y="-80" width="1800" height="660"/>
+    <rect class="tun" style="animation-delay:-1.8s"  x="320" y="-80" width="1800" height="660"/>
+    <rect class="tun" style="animation-delay:-2.4s"  x="320" y="-80" width="1800" height="660"/>
+    <rect class="tun" style="animation-delay:-3.0s"  x="320" y="-80" width="1800" height="660"/>
+    <rect class="tun" style="animation-delay:-3.6s"  x="320" y="-80" width="1800" height="660"/>
+    <rect class="tun" style="animation-delay:-4.2s"  x="320" y="-80" width="1800" height="660"/>
+  </g>
+
+  <!-- light trails: dim base + bright streaks racing to the vanishing point -->
+  <g fill="none" stroke-linecap="round" opacity="0.55">
+    <path d="M 700 520 Q 1000 400 1215 252" stroke="url(#blueTrail)" stroke-width="3"/>
+    <path d="M 800 520 Q 1050 410 1218 252" stroke="url(#blueTrail)" stroke-width="5"/>
+    <path d="M 900 520 Q 1100 420 1220 252" stroke="url(#blueTrail)" stroke-width="2"/>
+    <path d="M 1000 520 Q 1140 430 1222 252" stroke="url(#blueTrail)" stroke-width="3"/>
+    <path d="M 1500 520 Q 1330 420 1228 252" stroke="url(#redTrail)" stroke-width="4"/>
+    <path d="M 1580 520 Q 1360 410 1230 252" stroke="url(#redTrail)" stroke-width="2"/>
+    <path d="M 1600 440 Q 1380 360 1232 252" stroke="url(#redTrail)" stroke-width="3"/>
+  </g>
+  <g filter="url(#blur3)">
+    <path class="streak" style="animation-delay:0s"    d="M 700 520 Q 1000 400 1215 252" stroke="#cfe6ff" stroke-width="4"/>
+    <path class="streak" style="animation-delay:-.7s"  d="M 800 520 Q 1050 410 1218 252" stroke="#ffffff" stroke-width="6"/>
+    <path class="streak" style="animation-delay:-1.4s" d="M 900 520 Q 1100 420 1220 252" stroke="#7fb4ff" stroke-width="3"/>
+    <path class="streak" style="animation-delay:-.3s"  d="M 1000 520 Q 1140 430 1222 252" stroke="#cfe6ff" stroke-width="4"/>
+    <path class="streak" style="animation-delay:-1.0s" d="M 1500 520 Q 1330 420 1228 252" stroke="#ff4a4a" stroke-width="5"/>
+    <path class="streak" style="animation-delay:-1.8s" d="M 1580 520 Q 1360 410 1230 252" stroke="#ff7a7a" stroke-width="3"/>
+    <path class="streak" style="animation-delay:-.5s"  d="M 1600 440 Q 1380 360 1232 252" stroke="#ff4a4a" stroke-width="4"/>
+  </g>
+
+  <circle cx="1220" cy="250" r="95" fill="url(#vpGlow)">
+    <animate attributeName="r" values="80;110;80" dur="3s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- ArUco marker being detected at the end of the corridor -->
+  <g class="marker">
+    <rect x="1202" y="232" width="36" height="36" fill="#dfe9ff"/>
+    <rect x="1205" y="235" width="30" height="30" fill="none" stroke="#02050b" stroke-width="6"/>
+    <g fill="#02050b">
+      <rect x="1214" y="238" width="6" height="6"/><rect x="1220" y="244" width="6" height="6"/>
+      <rect x="1208" y="250" width="6" height="6"/><rect x="1214" y="250" width="6" height="6"/>
+      <rect x="1226" y="250" width="6" height="6"/><rect x="1220" y="256" width="6" height="6"/>
+      <rect x="1208" y="244" width="0" height="0"/>
+    </g>
+  </g>
+  <g class="lock" fill="none" stroke="#3dff9a" stroke-width="2.5" stroke-linecap="round">
+    <path d="M 1190 234 V 220 H 1204"/><path d="M 1250 234 V 220 H 1236"/>
+    <path d="M 1190 266 V 280 H 1204"/><path d="M 1250 266 V 280 H 1236"/>
+  </g>
+
+  <!-- twinkling point cloud -->
+  <g fill="#7fb4ff">
+    <circle class="tw" style="animation-delay:0s"   cx="1010" cy="140" r="1.8"/><circle class="tw" style="animation-delay:-.5s" cx="1045" cy="160" r="1.5"/>
+    <circle class="tw" style="animation-delay:-1.1s" cx="1090" cy="190" r="1.5"/><circle class="tw" style="animation-delay:-1.7s" cx="1390" cy="150" r="1.8"/>
+    <circle class="tw" style="animation-delay:-2.2s" cx="1350" cy="175" r="1.5"/><circle class="tw" style="animation-delay:-.8s" cx="1320" cy="205" r="1.5"/>
+    <circle class="tw" style="animation-delay:-1.4s" cx="960" cy="330" r="1.8"/><circle class="tw" style="animation-delay:-2.6s" cx="1050" cy="310" r="1.5"/>
+    <circle class="tw" style="animation-delay:-.2s" cx="1400" cy="330" r="1.8"/><circle class="tw" style="animation-delay:-1.9s" cx="1460" cy="300" r="1.5"/>
+    <circle class="tw" style="animation-delay:-2.9s" cx="1480" cy="110" r="1.8"/><circle class="tw" style="animation-delay:-1.3s" cx="880" cy="95" r="1.5"/>
+    <circle class="tw" style="animation-delay:-.9s" cx="1160" cy="120" r="1.5"/><circle class="tw" style="animation-delay:-2.0s" cx="1290" cy="380" r="1.5"/>
+    <circle class="tw" style="animation-delay:-2.4s" cx="780" cy="200" r="1.5"/><circle class="tw" style="animation-delay:-.4s" cx="620" cy="120" r="1.5"/>
+    <circle class="tw" style="animation-delay:-1.6s" cx="540" cy="380" r="1.5"/><circle class="tw" style="animation-delay:-2.7s" cx="400" cy="90" r="1.5"/>
+  </g>
+
+  <!-- planned path -->
+  <use xlink:href="#flight" href="#flight" fill="none" stroke="#6fd3ff" stroke-width="2" class="dash" opacity="0.8"/>
+
+  <!-- drone flies the path, shrinking into the corridor; LiDAR fan + ping rings ride along -->
+  <g>
+    <g>
+      <g opacity="0">
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.9;1" dur="8s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="scale" values="1.15;0.3" dur="8s" repeatCount="indefinite"/>
+        <g>
+          <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="2.4s" repeatCount="indefinite"/>
+          <path d="M 0 0 L 160 -46 A 166 166 0 0 1 160 46 Z" fill="url(#fan)"/>
+        </g>
+        <circle r="10" fill="none" stroke="#6fd3ff" stroke-width="1.5">
+          <animate attributeName="r" values="12;110" dur="1.8s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.8;0" dur="1.8s" repeatCount="indefinite"/>
+        </circle>
+        <circle r="10" fill="none" stroke="#6fd3ff" stroke-width="1.5">
+          <animate attributeName="r" values="12;110" dur="1.8s" begin="0.9s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.8;0" dur="1.8s" begin="0.9s" repeatCount="indefinite"/>
+        </circle>
+        <circle r="36" fill="url(#glow)"/>
+        <g stroke="#cfeaff" stroke-width="2.5" stroke-linecap="round">
+          <line x1="-13" y1="-13" x2="13" y2="13"/><line x1="13" y1="-13" x2="-13" y2="13"/>
+        </g>
+        <rect x="-6" y="-6" width="12" height="12" rx="3" fill="#0b1626" stroke="#6fd3ff" stroke-width="2"/>
+        <g fill="none" stroke="#6fd3ff" stroke-width="1.5">
+          <ellipse class="spin" cx="-13" cy="-13" rx="9" ry="2.5"/><ellipse class="spin" cx="13" cy="-13" rx="9" ry="2.5"/>
+          <ellipse class="spin" cx="-13" cy="13" rx="9" ry="2.5"/><ellipse class="spin" cx="13" cy="13" rx="9" ry="2.5"/>
+        </g>
+        <circle r="2.6" fill="#ff3b3b" class="blink"/>
+      </g>
+    </g>
+    <animateMotion dur="8s" repeatCount="indefinite" rotate="0">
+      <mpath xlink:href="#flight" href="#flight"/>
+    </animateMotion>
+  </g>
+
+  <!-- left: gyro / horizon instrument (no text) -->
+  <rect x="0" y="0" width="760" height="520" fill="url(#fadeLeft)"/>
+  <g fill="none" stroke="#3d7cff">
+    <circle cx="230" cy="250" r="84" stroke-opacity="0.35" stroke-width="1.5"/>
+    <circle class="ring1" cx="230" cy="250" r="70" stroke-width="3" stroke-dasharray="4 14" stroke-opacity="0.8"/>
+    <circle class="ring2" cx="230" cy="250" r="56" stroke="#6fd3ff" stroke-width="2" stroke-dasharray="30 12 6 12" stroke-opacity="0.8"/>
+    <circle cx="230" cy="250" r="34" stroke-opacity="0.5" stroke-width="1.5"/>
+    <g class="horizon" stroke="#6fd3ff" stroke-width="2.5"><line x1="182" y1="250" x2="278" y2="250"/><line x1="206" y1="266" x2="254" y2="266" stroke-opacity="0.5"/><line x1="206" y1="234" x2="254" y2="234" stroke-opacity="0.5"/></g>
+    <path d="M 212 250 H 224 M 236 250 H 248 M 230 232 V 244" stroke="#cfe6ff" stroke-width="2"/>
+    <circle cx="230" cy="250" r="2.5" fill="#ff3b3b" stroke="none" class="blink"/>
+  </g>
+
+  <!-- left: sensor activity bars -->
+  <g fill="#3d7cff" opacity="0.85">
+    <rect class="bar" style="animation-delay:0s;animation-duration:1.3s"   x="80" y="70" width="6" height="44"/>
+    <rect class="bar" style="animation-delay:-.2s;animation-duration:1.7s" x="94" y="70" width="6" height="44"/>
+    <rect class="bar" style="animation-delay:-.5s;animation-duration:1.1s" x="108" y="70" width="6" height="44"/>
+    <rect class="bar" style="animation-delay:-.9s;animation-duration:1.9s" x="122" y="70" width="6" height="44"/>
+    <rect class="bar" style="animation-delay:-.3s;animation-duration:1.4s" x="136" y="70" width="6" height="44"/>
+    <rect class="bar" style="animation-delay:-1.2s;animation-duration:1.6s" x="150" y="70" width="6" height="44"/>
+    <rect class="bar" style="animation-delay:-.7s;animation-duration:1.2s" x="164" y="70" width="6" height="44"/>
+    <rect class="bar" style="animation-delay:-1.5s;animation-duration:2s"  x="178" y="70" width="6" height="44"/>
+  </g>
+
+  <!-- left: IMU trace -->
+  <g>
+    <path d="M 80 440 L 560 440" stroke="#1b3a73" stroke-width="1" stroke-dasharray="3 6"/>
+    <path class="wave" d="M 80 440 q 15 -34 30 0 t 30 0 t 30 0 q 8 -50 16 0 t 16 0 q 10 24 20 0 t 30 0 q 12 -42 24 0 t 24 0 t 24 0 q 8 30 16 0 t 30 0 t 30 0 q 12 -38 24 0 t 24 0 t 24 0 t 24 0 t 20 0" pathLength="1000"/>
+  </g>
+
+  <!-- global scanline sweep -->
+  <g class="scan"><rect x="-30" y="0" width="30" height="520" fill="url(#scanGrad)"/><rect x="-1" y="0" width="2" height="520" fill="#9fe3ff" opacity="0.7"/></g>
+
+  <!-- HUD corners -->
+  <g stroke="#3d7cff" stroke-width="2" fill="none" opacity="0.75">
+    <path d="M 30 70 V 30 H 70"/><path d="M 1570 70 V 30 H 1530"/>
+    <path d="M 30 450 V 490 H 70"/><path d="M 1570 450 V 490 H 1530"/>
+  </g>
+</svg>
