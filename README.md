@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./banner.svg" alt="Md Kaif Nezami — UAV Software Engineer" width="100%">
+</p>
+
 <h1 align="center">Md Kaif Nezami</h1>
 
 <h3 align="center">
@@ -25,7 +29,7 @@ Building software for autonomous aerial systems through perception, planning, an
 </p>
 
 <p align="center">
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=18&duration=3000&pause=1000&center=true&vCenter=true&width=800&lines=Autonomous+Aerial+Systems;Indoor+Autonomy;Flight+Data+Analysis;ROS2+and+PX4;Computer+Vision+and+OpenCV;Motion+Planning;Simulation+and+Validation">
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=18&duration=3000&pause=1000&center=true&vCenter=true&width=800&lines=Autonomous+Aerial+Systems;GPS-Denied+Indoor+Autonomy;NIDAR+2.0+AirMouse;ROS2+and+PX4;Computer+Vision+and+OpenCV;Motion+Planning;Simulation+and+Validation">
 </p>
 
 ---
@@ -36,9 +40,21 @@ I am an Electronics and Communication Engineering undergraduate at BIT Sindri wo
 
 My work combines robotics, computer vision, simulation, and embedded software to develop reliable navigation pipelines for unmanned aerial vehicles.
 
-I previously worked on a MeitY-funded UAV research project at the Drone Laboratory, IIT (ISM) Dhanbad under the supervision of Prof. Ravi Kumar Gangwar.
+## Currently
 
-I am currently working on indoor autonomy while continuing to explore motion planning, state estimation, perception, and visual SLAM using ROS 2.
+I am a **Project Intern at the Drone Electronics Laboratory, IIT (ISM) Dhanbad**, under the supervision of Prof. Ravi Kumar Gangwar (started May 2026, extended for a further 6 months).
+
+- Working on the **NIDAR 2.0 AirMouse mission** (Problem Statement 2): an autonomous, GPS-denied indoor drone that searches, maps, and localises survivors.
+- Building the indoor autonomy stack: vision-based navigation, state estimation, motion planning, and visual SLAM using ROS 2.
+- Continuing flight data analysis and simulation-based validation for the lab's UAV projects.
+
+---
+
+## Highlights
+
+- Semi-finalist, **ISRO IRoC 2026** (team AADISHAKTI, BIT Sindri): GPS-denied autonomous drone
+- **NIDAR 2.0** participant, representing IIT (ISM) Dhanbad
+- Team leader, **e-Yantra 2026-27 Khoj-o-Drone**
 
 ---
 
@@ -57,13 +73,13 @@ I am currently working on indoor autonomy while continuing to explore motion pla
 
 ## Research Experience
 
-### Drone Laboratory — IIT (ISM) Dhanbad
+### Drone Electronics Laboratory — IIT (ISM) Dhanbad
 
 #### Areas of contribution
 
-- Flight data analysis
-- GPS-denied navigation
+- GPS-denied indoor navigation (NIDAR 2.0 AirMouse)
 - Vision-based navigation
+- Flight data analysis
 - Sensor integration
 - Embedded software development
 - Simulation and validation
@@ -226,9 +242,9 @@ UAV Systems
 
 <p align="center">
 
-<img height="170em" src="https://github-readme-stats.vercel.app/api?username=nezamimdkaif&show_icons=true">
+<img height="170em" src="https://github-readme-stats.vercel.app/api?username=nezamimdkaif&show_icons=true&theme=dark">
 
-<img height="170em" src="https://github-readme-streak-stats.herokuapp.com/?user=nezamimdkaif">
+<img height="170em" src="https://github-readme-streak-stats.herokuapp.com/?user=nezamimdkaif&theme=dark">
 
 </p>
 
@@ -238,7 +254,7 @@ UAV Systems
 
 <p align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=nezamimdkaif">
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=nezamimdkaif&theme=react-dark">
 
 </p>
 
