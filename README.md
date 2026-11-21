@@ -27,10 +27,10 @@ I build autonomy software for drones and mobile robots that must work **without 
 
 ## Featured Projects
 
-### [Drone SLAM Simulator](https://github.com/nezamimdkaif/drone-slam-simulator)
-2D LiDAR SLAM with Google Cartographer for a quadrotor in a Gazebo maze, with a live web dashboard, phone control and test tools that score SLAM against ground truth.
+### Drone SLAM Simulator (practice project)
+2D LiDAR SLAM with Google Cartographer for a quadrotor in a Gazebo maze, with a live web dashboard, phone control and test tools that score SLAM against ground truth. Built to practise mapping before working on the real drone.
 - Found that loop closure **increased** mean error from **0.10 m to 0.42 m** (3 runs each) in a repetitive maze due to false matches.
-- Same SLAM config and dashboard run on the real drone (Raspberry Pi 4 + RPLIDAR A2M12 + Pixhawk IMU over MAVROS).
+- After practising here, Cartographer mapping now also runs on the real drone (Raspberry Pi 4 + RPLIDAR A2M12 + Pixhawk IMU over MAVROS), with its own configuration.
 
 `ROS 2 Jazzy` `Gazebo Harmonic` `Cartographer` `Python` `RViz` `FastAPI`
 
