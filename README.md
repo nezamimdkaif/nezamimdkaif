@@ -1,273 +1,81 @@
 <p align="center">
-  <img src="./banner.svg" alt="Md Kaif Nezami — UAV Software Engineer" width="100%">
+  <img src="./banner.svg" alt="Md Kaif Nezami - Robotics and UAV Autonomy" width="100%">
 </p>
 
 <h1 align="center">Md Kaif Nezami</h1>
 
-<h3 align="center">
-UAV Software Engineer
-</h3>
-
 <p align="center">
-Building software for autonomous aerial systems through perception, planning, and control.
+<b>Robotics and UAV Autonomy</b> · ROS 2 · LiDAR SLAM · Python<br>
+B.Tech Electronics and Communication Engineering, BIT Sindri (2024 - 2028)
 </p>
 
 <p align="center">
-
-<a href="https://www.linkedin.com/in/md-kaif-nezami-029507313">
-<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white">
-</a>
-
-<a href="https://nezamimdkaif.github.io/portfolio/">
-<img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=firefox&logoColor=white">
-</a>
-
-<a href="mailto:mdkaif.ece24@bitsindri.ac.in">
-<img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white">
-</a>
-
-</p>
-
-<p align="center">
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=18&duration=3000&pause=1000&center=true&vCenter=true&width=800&lines=Autonomous+Aerial+Systems;GPS-Denied+Indoor+Autonomy;NIDAR+2.0+AirMouse;ROS2+and+PX4;Computer+Vision+and+OpenCV;Motion+Planning;Simulation+and+Validation">
+<a href="https://www.linkedin.com/in/md-kaif-nezami-029507313"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+<a href="https://nezamimdkaif.github.io/portfolio/"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=googlechrome&logoColor=white"></a>
+<a href="mailto:mdkaif.ece24@bitsindri.ac.in"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"></a>
 </p>
 
 ---
 
-## About Me
+## About
 
-I am an Electronics and Communication Engineering undergraduate at BIT Sindri working on software development for autonomous aerial systems.
+I build autonomy software for drones and mobile robots that must work **without GPS**: LiDAR SLAM, sensor integration, simulation and hardware bring-up, mostly in **Python** and **ROS 2**.
 
-My work combines robotics, computer vision, simulation, and embedded software to develop reliable navigation pipelines for unmanned aerial vehicles.
-
-## Currently
-
-I am a **Project Intern at the Drone Electronics Laboratory, IIT (ISM) Dhanbad**, under the supervision of Prof. Ravi Kumar Gangwar (started May 2026, extended for a further 6 months).
-
-- Working on the **NIDAR 2.0 AirMouse mission** (Problem Statement 2): an autonomous, GPS-denied indoor drone that searches, maps, and localises survivors.
-- Building the indoor autonomy stack: vision-based navigation, state estimation, motion planning, and visual SLAM using ROS 2.
-- Continuing flight data analysis and simulation-based validation for the lab's UAV projects.
-
----
-
-## Highlights
-
-- Semi-finalist, **ISRO IRoC 2026** (team AADISHAKTI, BIT Sindri): GPS-denied autonomous drone
-- **NIDAR 2.0** participant, representing IIT (ISM) Dhanbad
-- Team leader, **e-Yantra 2026-27 Khoj-o-Drone**
-
----
-
-## Areas of Interest
-
-- Autonomous navigation
-- Indoor autonomy
-- Flight data analysis
-- Computer vision
-- State estimation
-- Motion planning
-- Sensor fusion
-- Embedded systems
-
----
-
-## Research Experience
-
-### Drone Electronics Laboratory — IIT (ISM) Dhanbad
-
-#### Areas of contribution
-
-- GPS-denied indoor navigation (NIDAR 2.0 AirMouse)
-- Vision-based navigation
-- Flight data analysis
-- Sensor integration
-- Embedded software development
-- Simulation and validation
+**Currently:** Project Intern at the Drone Electronics Laboratory, IIT (ISM) Dhanbad, working on the **NIDAR 2.0 AirMouse** mission (indoor GPS-denied search and mapping).
 
 ---
 
 ## Featured Projects
 
-### ArduPilot Flight Analysis
+### [Drone SLAM Simulator](https://github.com/nezamimdkaif/drone-slam-simulator)
+2D LiDAR SLAM with Google Cartographer for a quadrotor in a Gazebo maze, with a live web dashboard, phone control and test tools that score SLAM against ground truth.
+- Found that loop closure **increased** mean error from **0.10 m to 0.42 m** (3 runs each) in a repetitive maze due to false matches.
+- Same SLAM config and dashboard run on the real drone (Raspberry Pi 4 + RPLIDAR A2M12 + Pixhawk IMU over MAVROS).
 
-- Investigated quadrotor flight logs using ArduPilot DataFlash logs.
+`ROS 2 Jazzy` `Gazebo Harmonic` `Cartographer` `Python` `RViz` `FastAPI`
 
-- Identified failure patterns associated with GPS inconsistencies, vibration anomalies, and attitude instability.
+### LiDAR SLAM on real hardware
+- Raspberry Pi 4 (ROS 2 Humble) + RPLIDAR A2M12; Pixhawk 6C IMU streamed at 50 Hz over MAVLink (UART, 921600 baud).
+- Fixed multi-machine ROS 2 over WiFi (blocked DDS multicast) with Fast DDS unicast peers; live scans in RViz.
 
-- Developed automated analysis pipelines using Python.
+`ROS 2` `MAVROS` `MAVLink` `Fast DDS` `Linux`
 
-- Validated observations using MAVExplorer and Mission Planner.
+### UAV flight-log analysis
+- Analysed 19+ ArduPilot/PX4 logs with pymavlink: GPS/compass inconsistency was the most frequent anomaly (26 events in 7 logs); vibration peaked at 62.7 m/s².
+- Reconstructed and animated flight trajectories from DataFlash logs.
 
-#### Technologies
+<p align="center"><img src="./flight_animation(4).gif" width="700"></p>
 
-```text
-Python • Pymavlink • MAVExplorer • Pandas • Matplotlib
-```
+`Python` `pymavlink` `NumPy` `Matplotlib` `OpenCV`
 
----
+### Vision-based precision landing
+- Nested ArUco markers (0.2 - 15 m range) for pose estimation on a Raspberry Pi 4; Python ROS 2 nodes command a Cube Orange over MAVROS. Verified in simulation.
 
-### Flight Path Reconstruction and Visualization
-
-Reconstructed UAV trajectories from ArduPilot DataFlash logs using Python, OpenCV, and pymavlink.
-
-<p align="center">
-
-<img src="./flight_animation(4).gif" width="850">
-
-</p>
-
-#### Highlights
-
-- Extracted telemetry information from DataFlash logs.
-
-- Reconstructed flight trajectories from GPS data.
-
-- Generated animated trajectory visualizations using OpenCV.
-
-- Validated reconstructed flight paths using Mission Planner and MAVExplorer.
-
-#### Technologies
-
-```text
-Python • OpenCV • Pymavlink • MAVExplorer
-```
+`OpenCV` `ROS 2` `MAVROS` `PX4 SITL` `Gazebo`
 
 ---
 
-### Vision-Based Navigation for GPS-Denied Environments
+## Highlights
 
-- Developed an ArUco-based precision landing pipeline.
-
-- Integrated Cube Orange and Raspberry Pi hardware.
-
-- Performed simulation-based validation using PX4 and Gazebo.
-
-#### Technologies
-
-```text
-ROS2 • PX4 • Gazebo • OpenCV • MAVROS • ArUco
-```
+- **ISRO IRoC-U 2026**, Team AADISHAKTI: reached the elimination round (GPS-denied autonomous drone); built the ground station.
+- Secured **INR 1,00,000 sponsorship from SAIL** for the IRoC-U team.
+- **NIDAR 2.0** participant, representing IIT (ISM) Dhanbad.
 
 ---
 
-### TurtleBot3 Navigation and Control
+## Skills
 
-- Forward kinematics
+| Area | Tools |
+|---|---|
+| Programming | Python (primary), Bash, C++ (basic) |
+| Robotics software | ROS 2 (Humble, Jazzy), rclpy, TF2, RViz, colcon, Fast DDS |
+| Perception and localization | Cartographer LiDAR SLAM, OpenCV, ArUco pose estimation |
+| Simulation and autopilots | Gazebo, PX4 SITL, ArduPilot SITL, PX4, ArduPilot, MAVLink, MAVROS |
+| Hardware | Raspberry Pi 4/5, Pixhawk 6C, Cube Orange, RPLIDAR, optical flow |
+| Tools | Linux (Ubuntu), Git, Docker, LaTeX, QGroundControl, Mission Planner |
 
-- Inverse kinematics
-
-- Odometry estimation
-
-- Laser scanner processing
-
-- Obstacle avoidance
-
-#### Technologies
-
-```text
-ROS • Gazebo • RViz • Python
-```
+<p align="center"><img src="https://skillicons.dev/icons?i=python,cpp,linux,git,docker,latex"/></p>
 
 ---
 
-## Technology Stack
-
-<p align="center">
-
-<img src="https://skillicons.dev/icons?i=c,cpp,python,java,linux,git,github,vscode"/>
-
-</p>
-
----
-
-## Robotics Stack
-
-```text
-Perception
-├── OpenCV
-├── ArUco
-├── Image processing
-└── Sensor fusion
-
-Planning
-├── Forward kinematics
-├── Inverse kinematics
-├── Trajectory generation
-├── Motion planning
-└── Path planning
-
-Control
-├── PID control
-├── State estimation
-└── Flight control
-
-Simulation
-├── Gazebo
-├── RViz
-├── PX4
-└── SITL
-
-UAV Systems
-├── ArduPilot
-├── MAVLink
-├── MAVROS
-├── Mission Planner
-└── Companion computers
-```
-
----
-
-## Currently Learning
-
-- ROS2
-- Motion planning
-- State estimation
-- Visual SLAM
-- Control systems
-- Reinforcement learning
-
----
-
-## Technical Documentation
-
-- Research reports using LaTeX
-- Experimental evaluation
-- Technical benchmarking
-- Simulation reports
-- Flight data analysis reports
-
----
-
-## GitHub Analytics
-
-<p align="center">
-
-<img height="170em" src="https://github-readme-stats.vercel.app/api?username=nezamimdkaif&show_icons=true&theme=dark">
-
-<img height="170em" src="https://github-readme-streak-stats.herokuapp.com/?user=nezamimdkaif&theme=dark">
-
-</p>
-
----
-
-## Contribution Graph
-
-<p align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=nezamimdkaif&theme=react-dark">
-
-</p>
-
----
-
-<p align="center">
-
-<img src="https://komarev.com/ghpvc/?username=nezamimdkaif&style=for-the-badge">
-
-</p>
-
----
-
-<p align="center">
-Building intelligent aerial systems one algorithm at a time.
-</p>
+<p align="center"><i>Open to robotics, ROS 2 and UAV autonomy internships.</i></p>
